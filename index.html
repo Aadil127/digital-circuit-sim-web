@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+    <title>Digital Circuit Simulator</title>
+    <style>
+           html, body {
+               width: 100%;
+               height: 100%;
+               margin: 0;
+               padding: 0;
+               overflow: hidden;
+               background-color: #202020;
+           }
+
+           body > canvas {
+               display: block;
+               width: 100%;
+               height: 100%;
+           }
+       </style>
+<link rel="modulepreload" href="/digital-circuit-sim-web/circuit_simulator-77f3c24e890b54f4.js" crossorigin="anonymous" integrity="sha384-qLk4WmBqMtJtUzkKmOYA2BftQPpLnwT9VW+cH1s9JOV0tTXjy+f17ow9d6g1GqDv"><link rel="preload" href="/digital-circuit-sim-web/circuit_simulator-77f3c24e890b54f4_bg.wasm" crossorigin="anonymous" integrity="sha384-S/pHPxbNq1QNIdoexP1oFThBuKtO2AL4CQK+a+79Sz0U00TMfCE41WBKeEVro9Cb" as="fetch" type="application/wasm"></head>
+<body>
+    
+<script type="module">
+import init, * as bindings from '/digital-circuit-sim-web/circuit_simulator-77f3c24e890b54f4.js';
+const wasm = await init({ module_or_path: '/digital-circuit-sim-web/circuit_simulator-77f3c24e890b54f4_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script>
+    
+</body>
+</html>
