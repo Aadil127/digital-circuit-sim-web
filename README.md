@@ -6,7 +6,6 @@ Try to [Launch sim](https://aadil127.github.io/digital-circuit-sim-web/).
 
 It is still in early stage for wasm build.
 
-##### Support for IC is in WIP.
 
 ---
 
