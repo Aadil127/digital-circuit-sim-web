@@ -4,8 +4,6 @@ Built using [iced](https://github.com/iced-rs/iced/), the web build is packaged 
 
 Try to [Launch sim](https://aadil127.github.io/digital-circuit-sim-web/).
 
-It is still in early stage for wasm build.
-
 
 ---
 
@@ -22,7 +20,10 @@ It is still in early stage for wasm build.
 |Toggle grid snapping| ctrl + G|
 |Zoom in| ctrl + + or ctrl + =|
 |Zoom out| ctrl + -|
+|Toggle sim pause(when simulator is running)| ctrl + ,|
 |Step sim one Step (when simulator is paused)| ctrl + .|
+|Start sim| F5|
+|Stop sim| shift + F5|
 
 ---
 
